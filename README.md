@@ -1,4 +1,5 @@
-# collasal
+# collosal-vue
+
 
 ## Project setup
 ```
