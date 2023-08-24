@@ -2,11 +2,11 @@
   <div>
     <section class="hero-section mt-5">
       <div class="container p-5">
-        <h2 class="hero-badge text-center mt-3">CLIENT-DEVELOPMENT DRIVEN</h2>
-        <h1 class="hero-title mt-3">
-          We Design. We Develop. We Ship. <br />
-          In The Same Day.
-        </h1>
+        <base-badge badge="CLIENT-DEVELOPMENT DRIVEN" />
+        <base-title
+          title="We Design. We Develop. We Ship.
+          In The Same Day." text-position="center"
+        />
         <p class="hero-content mt-3">
           We are committed to not making clients wait. We will deliver the work
           <br />
@@ -19,48 +19,27 @@
           <base-button-sec>Learn More</base-button-sec>
         </div>
         <div class="row mt-5">
-          <div class="col-4">
-            <div class="hero-card p-3">
-              <div class="card-icon text-start">
-                <i class="bi bi-brush text-white"></i>
-              </div>
-              <div class="card-body">
-                <h2 class="hero-card-title text-start mt-3">Design</h2>
-                <p class="hero-card-text text-start mt-2">
-                  The project interface will be designed first, our favorite
-                  tool is Figma.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="hero-card p-3">
-              <div class="card-icon text-start">
-                <i class="bi bi-code text-white"></i>
-              </div>
-              <div class="card-body">
-                <h2 class="hero-card-title text-start mt-3">Develop</h2>
-                <p class="hero-card-text text-start mt-2">
-                  Transform design and write business logic here. Choose the
-                  technology you want.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="hero-card p-3">
-              <div class="card-icon text-start">
-                <i class="bi bi-box text-white"></i>
-              </div>
-              <div class="card-body">
-                <h2 class="hero-card-title text-start mt-3">Ship</h2>
-                <p class="hero-card-text text-start mt-2">
-                  After the work is complete, we will send the project and all
-                  its assets to you.
-                </p>
-              </div>
-            </div>
-          </div>
+          <hero-card
+            icon="brush"
+            title="Design"
+            text=" The project interface will be designed first, our favorite tool is
+            Figma."
+          >
+          </hero-card>
+          <hero-card
+            icon="code"
+            title="Develop"
+            text="Transform design and write business logic here. Choose the
+            technology you want."
+          >
+          </hero-card>
+          <hero-card
+            icon="box"
+            title="Ship"
+            text="  After the work is complete, we will send the project and all its
+            assets to you."
+          >
+          </hero-card>
         </div>
         <hr class="mt-5" />
         <div class="row">
@@ -89,30 +68,33 @@
           <div class="col">
             <img src="@/assets/work.png" alt="" />
           </div>
-          <div class="col text-start mt-3">
-            <h2 class="work-badge mt-5">HOW WE WORK?</h2>
-            <h1 class="work-title mt-3">
-              Everything is well planned, well designed and developed
-              wholeheartedly
-            </h1>
-            <p class="work-content mt-3">
-              Careful planning makes us confident, developed with best practices
+          <div class="col mt-3">
+            <base-badge badge="HOW WE WORK?" text-position="start" />
+            <base-title
+              title="Everything is well planned, well designed and developed
+              wholeheartedly"
+              text-position="start"
+            />
+            <base-content
+              content=" Careful planning makes us confident, developed with best practices
               so that the project can be maintained. We always test projects
-              before they are shipped.
-            </p>
+              before they are shipped." text-position="start"
+            />
           </div>
         </div>
         <div class="row">
           <div class="col text-start mt-3">
-            <h2 class="work-badge mt-5">OUR TEAM</h2>
-            <h1 class="work-title mt-3">
-              We're a team of designers, engineers and analysts
-            </h1>
-            <p class="work-content mt-3">
-              Our team consists of many creative people. We are committed to
+            <base-badge badge="OUR TEAM" text-position="start" />
+            <base-title
+              title="We're a team of designers, engineers and analysts"
+              text-position="start"
+            />
+            <base-content
+              content=" Our team consists of many creative people. We are committed to
               maintaining quality work as well as speed. These creative people
-              work together to create maximum work results.
-            </p>
+              work together to create maximum work results."
+              text-position="start"
+            />
             <base-button-sec>See Our Teams</base-button-sec>
           </div>
           <div class="col">
@@ -124,40 +106,28 @@
     </section>
     <section class="project-section">
       <div class="container">
-        <h2 class="project-badge">PROJECTS</h2>
-        <h1 class="project-title">
-          We have completed many <br />
-          amazing projects that you will <br />
-          not believe
-        </h1>
+        <base-badge badge="PROJECTS" />
+        <base-title
+          title="   We have completed many
+          amazing projects that you will
+          not believe"
+        />
         <div class="row">
-          <div class="col">
-            <div class="project-img">
-              <img class="img-fluid" src="@/assets/image.jpg" alt="" />
-            </div>
-            <div class="project-body">
-              <h2 class="project-body-title mt-4">
-                The Mobile App Landing Page
-              </h2>
-              <p class="project-body-content mt-2">
-                A landing page for mobile app
-              </p>
-              <base-button>Details</base-button>
-            </div>
+          <div class="col mt-5">
+            <project-card
+              imageSrc="image.jpg"
+              title="The Mobile App Landing Page"
+              content="A landing page for the mobile app"
+            />
+            <base-button>Details</base-button>
           </div>
-          <div class="col">
-            <div class="project-img">
-              <img class="img-fluid" src="@/assets/image1.jpg" alt="" />
-            </div>
-            <div class="project-body">
-              <h2 class="project-body-title mt-4">
-                The Desktop App Landing Page
-              </h2>
-              <p class="project-body-content mt-2">
-                A landing page for desktop app
-              </p>
-              <base-button>Details</base-button>
-            </div>
+          <div class="col mt-5">
+            <project-card
+              imageSrc="image1.jpg"
+              title="The Desktop App Landing Page"
+              content="A landing page for the desktop app"
+            />
+            <base-button>Details</base-button>
           </div>
         </div>
       </div>
@@ -165,153 +135,79 @@
     <section class="start-section p-5 mt-5">
       <div class="container start">
         <div class="start-body p-5">
-          <h2 class="project-badge mt-5">GET STARTED</h2>
-          <h1 class="project-title mt-3">
-            What do you need? Choose a <br />
-            service that can help you
-          </h1>
+          <base-badge badge="GET STARTED" />
+          <base-title
+            title="   What do you need? Choose a
+            service that can help you"
+          />
         </div>
         <div class="row">
-          <div class="col-4 ml-1">
-            <div class="start-card bg-deep-blue">
-              <div class="row">
-                <div class="col mt-5">
-                  <h3 class="start-title">UI Design</h3>
-                </div>
-                <div class="col mt-5">
-                  <h5 class="start-text">Starting from</h5>
-                  <h2 class="price">1200$</h2>
-                </div>
-              </div>
-              <hr class="pricing-hr" />
-              <p class="pricing-details">
-                10 design pages <br />
-                Well-documented <br />
-                4 revisions <br />
-                $100/additional page
-              </p>
-              <button class="dp-color btn">Details</button>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="start-card bg-blue">
-              <div class="row">
-                <div class="col mt-5">
-                  <h3 class="start-title">Development</h3>
-                </div>
-                <div class="col mt-5">
-                  <h5 class="start-text">Starting from</h5>
-                  <h2 class="price">5000$</h2>
-                </div>
-              </div>
-              <hr class="pricing-hr" />
-              <p class="pricing-details">
-                Web & Mobile <br />
-                Well-documented <br />
-                8 revisions <br />
-                $1000/additional feature
-              </p>
-              <button class="blue-color btn">Details</button>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="start-card bg-pink">
-              <div class="row">
-                <div class="col mt-5">
-                  <h3 class="start-title">Maintenance</h3>
-                </div>
-                <div class="col mt-5">
-                  <h5 class="start-text">Starting from</h5>
-                  <h2 class="price">3000$</h2>
-                </div>
-              </div>
-              <hr class="pricing-hr" />
-              <p class="pricing-details">
-                Daily backup <br />
-                3 hourse of maintenance <br />
-                Including fixing <br />
-                $50/additional hou
-              </p>
-              <button class="color-pink btn">Details</button>
-            </div>
-          </div>
+          <price-card
+            title="UI Design"
+            price="1200$"
+            details="10 design pages<br />Well-documented<br />4 revisions<br />$100/additional page"
+            cardClass="bg-deep-blue"
+            buttonClass="dp-color"
+          />
+
+          <price-card
+            title="Development"
+            price="5000$"
+            details="Web & Mobile<br />Well-documented<br />8 revisions<br />$1000/additional feature"
+            cardClass="bg-blue"
+            buttonClass="blue-color"
+          />
+
+          <price-card
+            title="Maintenance"
+            price="3000$"
+            details="Daily backup <br />3 hours of maintenance<br />Including fixing<br />$50/additional hour"
+            cardClass="bg-pink"
+            buttonClass="color-pink"
+          />
         </div>
       </div>
     </section>
-    <section class="trstimonial">
+    <section class="testimonial">
       <div class="container">
         <div class="start-body p-5">
-          <h2 class="project-badge mt-5">TESTIMONIAL</h2>
-          <h1 class="project-title mt-3">
-            What do our clients say that we <br />
-            never let down?
-          </h1>
+          <base-badge badge="TESTIMONIAL" />
+          <base-title
+            title=" What do our clients say that we 
+            never let down?" :padding="5"
+          />
         </div>
         <div class="row">
-          <div class="col-4 mt-4">
-            <div class="testimonial-card">
-              <div class="testimonial-img">
-                <img class="mt-5" src="@/assets/avatar.png" alt="" />
-              </div>
-              <div class="testimonial-header">
-                <h2 class="testimonial-badge mt-2">Courtney Henry</h2>
-                <h5 class="testimonial-title mt-2">Biffco Enterprises Ltd.</h5>
-              </div>
-              <div class="testimonial-body">
-                <p class="testimonial-content mt-4">
-                  "Very easy to use. I made back the purchase price in just 48
-                  hours! It's great. It's is both attractive and highly
-                  adaptable."
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="testimonial-card">
-              <div class="testimonial-img">
-                <img class="mt-5" src="@/assets/avatar2.png" alt="" />
-              </div>
-              <div class="testimonial-header">
-                <h2 class="testimonial-badge mt-2">Esther Howard</h2>
-                <h5 class="testimonial-title mt-2">Abstergo Ltd.</h5>
-              </div>
-              <div class="testimonial-body">
-                <p class="testimonial-content mt-4">
-                  "Your company is truly upstanding and is behind its product
-                  100%. It's the perfect solution for our business. It has
-                  really helped our business."
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 mt-4">
-            <div class="testimonial-card">
-              <div class="testimonial-img">
-                <img class="mt-5" src="@/assets/avatar1.png" alt="" />
-              </div>
-              <div class="testimonial-header">
-                <h2 class="testimonial-badge mt-2">Ronald Richards</h2>
-                <h5 class="testimonial-title mt-2">Barone LLC.</h5>
-              </div>
-              <div class="testimonial-body">
-                <p class="testimonial-content mt-4">
-                  "I am really satisfied with it. I'm good to go. It really
-                  saves me time and effort. It's is exactly what our business
-                  has been lacking."
-                </p>
-              </div>
-            </div>
-          </div>
+          <testimonial-card
+            imageSrc="avatar.png"
+            name="Courtney Henry"
+            company="Biffco Enterprises Ltd."
+            content="Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."
+          />
+          <testimonial-card
+            imageSrc="avatar2.png"
+            name="Esther Howard"
+            company="Abstergo Ltd."
+            content="Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."
+          />
+          <testimonial-card
+            imageSrc="avatar1.png"
+            name="Ronald Richards"
+            company="Barone LLC."
+            content="I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking."
+          />
         </div>
       </div>
     </section>
-    
   </div>
 </template>
 
 <script>
+import HeroCard from "@/components/cards/HeroCard.vue";
+import PriceCard from "@/components/cards/PriceCard.vue";
+import TestimonialCard from "@/components/cards/TestimonialCard.vue";
 export default {
-  components: {},
+  components: { HeroCard, PriceCard, TestimonialCard },
 };
 </script>
 
@@ -448,81 +344,7 @@ export default {
   border-radius: 30px;
   background: var(--highlight, #221048);
 }
-.bg-deep-blue {
-  background-color: #3f2379;
-}
-.dp-color {
-  color: #3f2379;
-}
-.bg-blue {
-  background-color: #233679;
-}
-.blue-color {
-  color: #233679;
-}
-.bg-pink {
-  background-color: #792366;
-}
-.color-pink {
-  color: #792366;
-}
-.start-card {
-  width: 328px;
-  height: 450px;
-  flex-shrink: 0;
-  border-radius: 10px;
-}
-.start-title {
-  color: #fff;
-  font-family: Noto Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.start-text {
-  color: var(--muted, rgba(255, 255, 255, 0.6));
-  text-align: center;
-  font-family: Noto Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.price {
-  color: #fff;
-  font-family: Noto Sans;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.pricing-hr {
-  width: 234px;
-  height: 1px;
-  flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.05);
-}
-.pricing-details {
-  color: #fff;
-  text-align: center;
-  font-family: Noto Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 36px;
-}
-.btn {
-  display: flex;
-  padding: 15px 55px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 3px;
-  background: #fff;
-  margin-left: 80px;
-  margin-top: 3rem;
-}
+/*  */
 .testimonial-card {
   width: 328px;
   height: 380px;
@@ -539,7 +361,7 @@ export default {
   font-weight: 700;
   line-height: normal;
 }
-.testimonail-title {
+/* .testimonial-title {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-family: Noto Sans;
@@ -547,7 +369,7 @@ export default {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
+} */
 .testimonial-content {
   color: var(--muted, rgba(255, 255, 255, 0.6));
   text-align: center;
